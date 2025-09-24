@@ -1,0 +1,13 @@
+{
+  "name": "rcg-csprng-server",
+  "version": "1.0.0",
+  "description": "Real CSPRNG-based 0-9 number rounds: 1-minute rounds, previous shown at :30, final at :00, new round starts at :01",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  }
+}
