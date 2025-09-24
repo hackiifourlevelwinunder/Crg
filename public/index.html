@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RCG - Live</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:1rem;background:#111;color:#eaeaea}
+    .card{padding:1rem;border-radius:8px;background:#1b1b1b;max-width:480px;margin:1rem auto}
+    .big{font-size:4rem;text-align:center}
+    .small{font-size:1rem;text-align:center;color:#bbb}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="small">Server time: <span id="serverTime">--:--:--</span></div>
+    <div class="big" id="display">—</div>
+    <div class="small">Status: <span id="status">connecting…</span></div>
+    <div class="small">Next final in: <span id="countdown">--s</span></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/client.js"></script>
+</body>
+</html>
